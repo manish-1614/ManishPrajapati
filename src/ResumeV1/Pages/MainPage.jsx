@@ -1,12 +1,17 @@
 import React from 'react'
+import HeroSection from '../Hero/HeroSection'
+import Navbar from '../Navbar/Navbar'
 
 const MainPage = () => {
   return (
-    <main className="flex justify-center gap-4 flex-col min-h-screen">
-      <h1 className="text-3xl p-4 text-center font-bold underline">Manish Prajapati Portfolio</h1>
-      <img src="https://res.cloudinary.com/dyfthf6kw/image/upload/v1715701264/codehelpDir/msns4zc7rlrcgwrlsggu.png" 
-        alt="profile" className="mx-auto" />
-    </main>
+    
+    <div className="w-full h-full bg-richblack-900 text-richblack-5">
+        <Navbar/>
+        <div className="py-4">
+            <HeroSection/>
+        </div>
+    </div> 
+    
   )
 }
 
