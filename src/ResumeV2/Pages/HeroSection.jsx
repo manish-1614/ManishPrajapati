@@ -1,13 +1,16 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
+import ProfileDescription from '../Components/ProfileDescription'
+import NavigateToLinks from '../Components/NavigateToLinks'
 
 const HeroSection = () => {
   return (
-    <div className='flex flex-col gap-4 items-center'>
-        <p className='text-2xl p-4 font-semibold'>Who is the hero ? He is the Hero.</p>
-        <img src='https://res.cloudinary.com/dyfthf6kw/image/upload/v1715701264/codehelpDir/msns4zc7rlrcgwrlsggu.png' 
-            alt="hero" 
-            className="mx-auto"
-        />
+    <div className='w-full h-full bg-white'>
+        <Navbar/>
+        <div>
+            <ProfileDescription/>
+            <NavigateToLinks/>
+        </div>
     </div>
   )
 }
