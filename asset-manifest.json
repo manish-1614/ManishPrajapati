@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ManishPrajapati/static/css/main.3728f7db.css",
+    "main.js": "/ManishPrajapati/static/js/main.b628cbb5.js",
+    "index.html": "/ManishPrajapati/index.html",
+    "main.3728f7db.css.map": "/ManishPrajapati/static/css/main.3728f7db.css.map",
+    "main.b628cbb5.js.map": "/ManishPrajapati/static/js/main.b628cbb5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3728f7db.css",
+    "static/js/main.b628cbb5.js"
+  ]
+}
