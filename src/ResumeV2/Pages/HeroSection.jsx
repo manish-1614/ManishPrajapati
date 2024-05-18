@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
 import ProfileDescription from '../Components/ProfileDescription'
 import NavigateToLinks from '../Components/NavigateToLinks'
+import Navbar from '../Components/Navbar'
 
 const HeroSection = () => {
   return (
