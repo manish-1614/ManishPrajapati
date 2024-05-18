@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {    
 
   return (
-    <div className='w-11/12 flex items-center justify-between py-4 mx-auto'>
+    <div className='w-11/12 flex items-center justify-around py-4 mx-auto font-roboto font-normal'>
         <div>
-            <p>Manish Prajapati</p>
+            <p className='text-2xl font-roboto'><span className='font-robotoslab'>M</span>anish <span className='font-robotoslab'>P</span>rajapati</p>
         </div>
         <div className='flex gap-4'>
             <Link to={'/'}>Work</Link>

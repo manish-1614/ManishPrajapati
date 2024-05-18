@@ -5,9 +5,10 @@ import Navbar from '../Components/Navbar'
 
 const HeroSection = () => {
   return (
-    <div className='w-full h-full bg-white'>
+    <div className='w-full h-full'>
         <Navbar/>
-        <div>
+        {/* added negative margin because the content was automatically leaving alot of margin */}
+        <div className='w-full'> 
             <ProfileDescription/>
             <NavigateToLinks/>
         </div>

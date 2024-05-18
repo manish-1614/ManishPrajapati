@@ -7,6 +7,16 @@ module.exports = {
       "edu-sa": ["Edu SA Beginner", "cursive"],
       mono: ["Roboto Mono", "monospace"],
       pacifico: ["Pacifico", "cursive"],
+      roboto: ['Roboto', 'sans-serif'],
+      robotoslab: ["Roboto Slab","serif"],
+    },
+    fontWeight: {
+      thin: 100,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      bold: 700,
+      black: 900,
     },
     colors: {
       white: "#fff",
