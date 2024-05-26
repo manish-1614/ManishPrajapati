@@ -4,7 +4,7 @@ import './ProfileDescription.css'
 
 const ProfileDescription = () => {
   return (
-    <div className='w-11/12 px-4 mx-auto h-full flex lg:flex-row-reverse gap-4 flex-col lg:items-center   justify-center'>
+    <div className=' w-11/12 px-4 mx-auto h-full flex lg:flex-row-reverse gap-4 flex-col lg:items-center  justify-center'>
       <div className='relative'>
         <img src='https://res.cloudinary.com/dyfthf6kw/image/upload/v1716021959/codehelpDir/Portfolio_DP_pfucmh.png' 
         className='rounded-full w-[60%]' alt='display hero' />

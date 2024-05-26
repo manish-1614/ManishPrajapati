@@ -5,7 +5,7 @@ import About from './ResumeV2/Pages/About';
 import LandingPage from './ResumeV1/Pages/LandingPage'
 
 
-function MyRoutes() {
+function RouteDefinitions() {
   return (
     <Routes>
       <Route path="/" element={<HeroSection />} />
@@ -15,4 +15,4 @@ function MyRoutes() {
   );
 }
 
-export default MyRoutes;
+export default RouteDefinitions;

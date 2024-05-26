@@ -1,0 +1,137 @@
+#bento_box {
+    padding: 1rem;
+
+    display: grid;
+    gap: 0.5rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+
+    grid-template-areas:
+        "ai ai ts ts ts work work"
+        "ai ai hero hero hero skill skill"
+        "ai ai hero hero hero skill skill"
+        "extra extra extra extra extra skill skill";
+}
+
+#ai {
+    grid-area: ai;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+#ts {
+    grid-area: ts;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+#work {
+    grid-area: work;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+#hero {
+    grid-area: hero;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+#skill {
+    grid-area: skill;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+#extra {
+    grid-area: extra;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgb(211, 253, 166);
+    background: linear-gradient(90deg, 
+        rgba(159, 221, 140, 0.901) 0%, 
+        rgba(208, 235, 200, 0.901) 50%,
+        rgba(226, 244, 220, 0.901) 100%);
+}
+
+@media (400px <= width <= 700px) {
+    #bento_box {
+        padding: 1rem;
+
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 2fr repeat(2, 1fr);
+    
+        grid-template-areas:
+            "work work work"
+            "hero hero hero"
+            "ts ts ai"
+            "ts ts ai"
+            "skill extra extra"
+            "skill extra extra"
+            "skill extra extra";
+    }
+}
+
+
+@media (701px <= width <= 1200px) {
+    #bento_box {
+        padding: 1rem;
+
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 2fr repeat(2, 1fr);
+    
+        grid-template-areas:
+            "ai ts work work"
+            "ai hero hero skill"
+            "ai hero hero skill"
+            "extra extra extra skill"
+    }
+}
+
+@media (width < 400px) {
+    #bento_box {
+        padding: 1rem;
+
+        display: grid;
+        gap: 0.5rem;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 1fr;
+    
+        grid-template-areas:
+            "hero"
+            "work"
+            "ts"
+            "ai"
+            "skill"
+            "extra"
+    }
+}
