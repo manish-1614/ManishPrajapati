@@ -5,10 +5,10 @@ import NavigateToLinks from '../Components/NavigateToLinks';
 
 const About = () => {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full bg-black'>
         <Navbar/>
         {/* added negative margin because the content was automatically leaving alot of margin */}
-        <div className='w-full'> 
+        <div className='w-full h-full'> 
             <ProfileDescription/>
             <NavigateToLinks/>
         </div>

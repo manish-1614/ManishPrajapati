@@ -5,15 +5,19 @@ import './ProfileDescription.css'
 const ProfileDescription = () => {
   return (
     <div className=' w-11/12 px-4 mx-auto h-full flex lg:flex-row-reverse gap-4 flex-col lg:items-center  justify-center'>
-      <div className='relative'>
+
+      {/* image and wobble animation wala div  */}
+      <div className='relative mb-10'>
         <img src='https://res.cloudinary.com/dyfthf6kw/image/upload/v1716021959/codehelpDir/Portfolio_DP_pfucmh.png' 
-        className='rounded-full w-[60%]' alt='display hero' />
+              className='rounded-full w-[50%] aspect-square object-cover' alt='display hero' />
         <div className='bottomBlur'></div>
-        <div className='wobble1'></div>
-        <div className='wobble2'></div>
+       
+        {/* <div className='wobble2'></div> */}
       </div>  
 
-      <div className='w-[70%]'>
+      {/* description wala div  */}
+      <div className='w-[70%] text-richblack-5 mb-10 relative'>
+        <div className='wobble1'></div>
         <div className='flex flex-col gap-2'>
           <p className='text-lg font-roboto'>I am a <RunningText text={"Software Developer"}/></p>
           <div className='flex flex-col gap-2 font-roboto font-normal text-lg'>

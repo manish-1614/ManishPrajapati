@@ -1,6 +1,5 @@
 #bento_box {
-    padding: 1rem;
-
+    padding: 0rem 0.5rem;
     display: grid;
     gap: 0.5rem;
     grid-template-rows: repeat(4, 1fr);
@@ -79,7 +78,7 @@
         rgba(226, 244, 220, 0.901) 100%);
 }
 
-@media (400px <= width <= 700px) {
+@media (400px <= width <= 725px) {
     #bento_box {
         padding: 1rem;
 

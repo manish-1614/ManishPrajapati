@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
             <p className='text-2xl font-roboto'><span className='font-robotoslab'>M</span>anish <span className='font-robotoslab'>P</span>rajapati</p>
         </div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 text-white'>
             <Link to={'/'}>Work</Link>
             <Link to={'/About'}>About</Link>
             <Link to={'https://drive.google.com/file/d/1pBi5ynbR0P2wVXUzov6wPL13OXO44roL/view?usp=drive_link'}

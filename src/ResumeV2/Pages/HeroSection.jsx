@@ -9,6 +9,7 @@ import Extras from './BentoBoxes/Extras'
 
 const HeroSection = () => {
   return (
+    <>
     <div className='w-[100vw] h-[100vh] bg-black text-richblack-5' 
           id='bento_box'>
         <div id='ai'>
@@ -30,6 +31,12 @@ const HeroSection = () => {
           <Extras/>
         </div>
     </div>
+
+    <div className='w-[100vw] h-[100vh] bg-black text-richblack-5'>
+      Downloads here
+    </div>
+
+    </>
   )
 }
 
