@@ -1,42 +1,41 @@
 import React from 'react'
 import './HeroSection.css'
-import AiTools from './BentoBoxes/AiTools'
-import TechStack from './BentoBoxes/TechStack'
-import CurrentWork from './BentoBoxes/CurrentWork'
-import Hero from './BentoBoxes/Hero'
-import Skills from './BentoBoxes/Skills'
-import Extras from './BentoBoxes/Extras'
+import SidePanel from './SidePanel'
+import {navlinks} from '../data/navlinks'
+import { Outlet} from 'react-router-dom'
+import NavLinkBar from './NavLinkBar'
 
 const HeroSection = () => {
+  console.log(navlinks);
   return (
-    <>
-    <div className='w-[100vw] h-[100vh] bg-black text-richblack-5' 
-          id='bento_box'>
-        <div id='ai'>
-          <AiTools/>
+   
+    <div className='relative w-full h-full'>
+      <div className='w-11/12 m-10 mx-auto'>
+        {/*upper section for space and links  */}
+        <div className='relative w-full flex justify-between'>
+          <p className='my-10 text-2xl font-robotoslab font-bold'>Manish Prajapati</p>
+          <div className='absolute right-[20%] bottom-0 flex gap-4'>
+            {
+              navlinks.map((element) => (
+                <NavLinkBar element={element} iconName={element.icon} 
+                />
+              ))
+            }
+          </div>
         </div>
-        <div id="ts">
-          <TechStack/>
+        <div className='w-full flex'>
+          <SidePanel/>
+          <div className='h-[calc(100vh - 3.5rem)] flex-1 overflow-auto mx-auto'>
+              <div className='w-11/12 p-10'>
+                  <Outlet/>
+              </div>
+          </div>
         </div>
-        <div id='work'>
-          <CurrentWork/>
-        </div>
-        <div id='hero'>
-          <Hero/>
-        </div>
-        <div id='skill'>
-          <Skills/>
-        </div>
-        <div id='extra'>
-          <Extras/>
-        </div>
-    </div>
+        
+      </div>
+       
 
-    <div className='w-[100vw] h-[100vh] bg-black text-richblack-5'>
-      Downloads here
     </div>
-
-    </>
   )
 }
 

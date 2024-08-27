@@ -1,8 +1,8 @@
 import React from 'react'
 import './bento.css'
-import "@blocknote/core/fonts/inter.css";
-import { useCreateBlockNote } from "@blocknote/react";
-import { BlockNoteView } from "@blocknote/mantine";
+// import "@blocknote/core/fonts/inter.css";
+// import { useCreateBlockNote } from "@blocknote/react";
+// import { BlockNoteView } from "@blocknote/mantine";
 import "@blocknote/mantine/style.css";
 import { Link } from 'react-router-dom';
 
@@ -20,9 +20,6 @@ const linkDefinitions = [
 ];
 
 const CurrentWork = () => {
-  // Creates a new editor instance.
-  const editor = useCreateBlockNote();
-
   // Renders the editor instance using a React component.
   return (
     <div className='w-full h-[100%]'>
@@ -36,7 +33,7 @@ const CurrentWork = () => {
         }
       </div>
 
-      <BlockNoteView editor={editor} />;
+      {/* <BlockNoteView editor={editor} />; */}
     </div>
   )
 }
