@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className='w-11/12 m-10 mx-auto'>
         {/*upper section for space and links  */}
         <div className='relative w-full flex justify-between'>
-          <p className='my-10 text-2xl font-robotoslab font-bold'>Manish Prajapati</p>
+          <p className='mb-16 py-10 text-2xl font-robotoslab font-bold'>Manish Prajapati</p>
           <div className='absolute right-[20%] bottom-0 flex gap-4'>
             {
               navlinks.map((element) => (
