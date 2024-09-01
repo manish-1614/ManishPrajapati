@@ -1,3 +1,35 @@
+.my-border {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old implementation related */
+
 #bento_box {
     padding: 0rem 0.5rem;
     display: grid;
