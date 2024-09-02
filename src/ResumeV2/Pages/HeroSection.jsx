@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HeroSection.css'
 import SidePanel from './SidePanel'
 import {navlinks} from '../data/navlinks'
-import { Outlet} from 'react-router-dom'
+import { Outlet, useNavigate} from 'react-router-dom'
 import NavLinkBar from './NavLinkBar'
 
 const HeroSection = () => {
+
+  let navigate = useNavigate();
+  useEffect( () => {
+    navigate('/about')
+  }, []);
   console.log(navlinks);
   return (
    

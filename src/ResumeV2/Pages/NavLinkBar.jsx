@@ -1,4 +1,3 @@
-import React from 'react'
 import * as Icons from 'react-icons/vsc'
 import { NavLink, matchPath, useLocation, useNavigate } from 'react-router-dom'
 
@@ -14,13 +13,15 @@ const NavLinkBar = ({element, iconName}) => {
         // console.log("first param: ",route, "second param: ", location.pathname," full Locaion : ", location);
         return matchPath({path:route}, location.pathname);
     }
+
   return (
     
         // NavLink
         <NavLink
             to={element.path}
             onClick={() => navigate(element.path)}
-            className={`rounded-lg p-2 text-lg ${matchRoute(element.path) ? 'bg-black text-white' : 'text-black hover:text-pink-200'}`}
+            className={`rounded-lg p-2 text-lg ${
+            matchRoute(element.path) ? 'bg-black text-white' : 'text-black hover:text-pink-200'}`}
         >
             <div className='flex flex-col items-center gap-2'>
                 <Icon className='text-4xl border-2 border-pink-900 p-2 rounded-lg' />

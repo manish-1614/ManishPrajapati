@@ -1,4 +1,5 @@
 import React from 'react'
+import InfoLink from '../Components/InfoLink'
 
 const SidePanel = () => {
   return (
@@ -8,9 +9,11 @@ const SidePanel = () => {
             // className='w-[70%] aspect-square object-cover mx-auto absolute left-1/2 -translate-x-1/2 -top-20'
             className='w-[70%] aspect-square object-cover mx-auto my-border'
           />
-          <p className='my-border text-center font-robotoslab font-light text-xl px-10'>
-            Software Engineer / Problem Solver
-          </p>
+
+          <div>
+            {/* information sharing card  */}
+            <InfoLink/>
+          </div>
         </div>
         
     </div>
