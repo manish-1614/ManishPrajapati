@@ -1,6 +1,8 @@
 import React from 'react'
 import WorkingSkills from '../Components/ResumeComponents/WorkingSkills'
 import Knowledges from '../Components/ResumeComponents/Knowledges'
+import Experiences from '../Components/Utilities/Experiences'
+import EducationList from '../Components/Utilities/EducationList'
 
 const Resume = () => {
   return (
@@ -12,16 +14,8 @@ const Resume = () => {
 
       {/* Experiences and Education  */}
       <div className='grid gap-2 grid-cols-2'>
-        <div className='my-border row-span-2'>
-          <p>Experiences</p>
-          <div className='my-border h-[80%] '>Amdocs</div>
-        </div>
-
-        <div className='my-border'>
-          <p>Education</p>
-          <div className='my-border h-32'>BIT Mesra, MCA</div>
-          <div className='my-border h-32'>Gulbarga University, BCA</div>
-        </div>
+        <Experiences/>
+        <EducationList/>
       </div>
 
       <div className='grid gap-2 grid-cols-2'>

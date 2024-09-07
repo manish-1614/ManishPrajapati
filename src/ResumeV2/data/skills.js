@@ -1,4 +1,4 @@
-export const skills = ["SQL","GitHub","Shell Scripting","Perforce","Jenkins","Eclipse-IDE","Skype","REST APIs","Agile Methodologies","JSON","AI","C","Data Models","CRM","Linux","Express","Node.js","IMAP","Maven","Unix","Public Speaking","Leadership","Touch Typing","Version Control","Weblogic","Redux","Devops","CICD"];
+export const skillChips = ["SQL","GitHub","Shell Scripting","Perforce","Jenkins","Eclipse-IDE","Skype","REST APIs","Agile Methodologies","JSON","AI","C","Data Models","CRM","Linux","Express","Node.js","IMAP","Maven","Unix","Public Speaking","Leadership","Touch Typing","Version Control","Weblogic","Redux","Devops","CICD"];
 
 export const ratedSkills = [
     {
