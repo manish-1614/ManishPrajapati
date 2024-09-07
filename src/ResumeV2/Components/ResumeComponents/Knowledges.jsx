@@ -10,7 +10,7 @@ const Knowledges = () => {
       <div className='flex flex-wrap gap-1'>
         {
           skillChips.map((element, index) => (
-            <div key={index} className='my-border'>
+            <div key={index} className='rounded-lg border-blue-100 border-[1px] px-2 my-[1px]'>
               <p>{element}</p>
             </div>
           ))
