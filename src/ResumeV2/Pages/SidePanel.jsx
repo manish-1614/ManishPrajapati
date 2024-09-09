@@ -1,5 +1,5 @@
 import React from 'react'
-import InfoLink from '../Components/InfoLink'
+import InfoLink from '../Components/Utilities/InfoLink'
 
 const SidePanel = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import { links } from '../data/links';
-import SkillTab from './Utilities/SkillTab';
+import { links } from '../../data/links';
+import SkillTab from './SkillTab';
 
 const InfoLink = () => {
   return (
