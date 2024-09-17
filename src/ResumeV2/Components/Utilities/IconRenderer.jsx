@@ -6,7 +6,7 @@ import * as TbIcons from 'react-icons/tb'
 
 const IconRenderer = ({ iconPath }) => {
     const [prefix, iconName] = iconPath.split("/");
-    console.log("Prefix - ", prefix, " Name - ", iconName)
+    // console.log("Prefix - ", prefix, " Name - ", iconName)
 
     if (prefix === "fa") {
         const Icon = FaIcons[iconName];

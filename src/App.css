@@ -4,3 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: calc(12px + 0.5vw); /* Adjust according to your needs */
+}

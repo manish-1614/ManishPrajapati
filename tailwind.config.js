@@ -154,6 +154,9 @@ module.exports = {
         maxContent: "1260px",
         maxContentTab: "650px"
       },
+      screens: {
+        'xs': {'min': '1px', 'max': '767px'},
+      }
     },
   },
   plugins: [],

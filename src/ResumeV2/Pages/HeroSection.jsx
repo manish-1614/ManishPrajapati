@@ -14,12 +14,12 @@ const HeroSection = () => {
   console.log(navlinks);
   return (
    
-    <div className='relative w-full h-full'>
-      <div className='w-11/12 m-10 mx-auto'>
+    <div id="hero-section" className='relative w-full h-full'>
+      <div className='m-10 mx-auto'>
         {/*upper section for space and links  */}
-        <div className='relative w-full flex justify-between'>
-          <p className='my-border mb-16 py-10 text-2xl font-robotoslab font-bold'>Manish Prajapati</p>
-          <div className='absolute right-[20%] bottom-0 flex gap-4 border-2 border-pink-700 p-2 rounded-lg'>
+        <div id="navbar" className='relative flex justify-around'>
+          <p id="my-name" className='my-border py-10 text-2xl font-robotoslab font-bold'>Manish Prajapati</p>
+          <div id="all-nav-links" className='flex gap-4 border-2 border-pink-700 p-2 rounded-lg max-h-[100px] min-h-[80px]'>
             {
               navlinks.map((element) => (
                 <NavLinkBar element={element} iconName={element.icon} 
@@ -28,9 +28,11 @@ const HeroSection = () => {
             }
           </div>
         </div>
-        <div className='w-full flex'>
-          <SidePanel/>
-          <div className='h-[calc(100vh - 3.5rem)] flex-1 overflow-auto mx-auto mt-12'>
+        <div id="panels" className='w-full flex'>
+          <div id="side-panel">
+            <SidePanel/>
+          </div>
+          <div id="outlet-panel" className='mt-10'>
               <div className='w-11/12 p-10'>
                   <Outlet/>
               </div>
