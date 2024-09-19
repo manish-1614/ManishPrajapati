@@ -2,7 +2,7 @@ import React from 'react'
 
 const Porto = ({element}) => {
   return (
-    <div className='flex flex-col gap-2 text-xl'>
+    <a href={element.url} target='_blank' rel='noreferrer' className='flex flex-col gap-2 text-xl'>
       <p>{element.topic}</p>
       <div className="border-t-[1px] border-richblack-200 py-2"></div>
       <div className='flex justify-between'>
@@ -10,18 +10,18 @@ const Porto = ({element}) => {
         <p>{element.time}</p>
       </div>
       <div>
-        <div className='text-lg font-bold'>
+        <div className='text-lg text-richblack-700 underline'>
             {element.company}
         </div>
-        <div>
+        <p className='text-lg font-bold'>
             {element.title}
-        </div>
+        </p>
         <div>
             {element.description}
         </div>
       </div>
       
-    </div>
+    </a>
   )
 }
 

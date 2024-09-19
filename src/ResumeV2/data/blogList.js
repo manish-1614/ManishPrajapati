@@ -22,5 +22,21 @@ export const blogList = [
         url: "https://techcommunity.microsoft.com/t5/microsoft-365/authentication-failure-for-imap-and-pop3-using-client-credential/m-p/3576825",
         description: "Tired of slow, unresponsive applications that can’t keep up with demand? Imagine a system where reads and writes are completely separated, allowing for unparalleled scalability and performance. Enter CQRS, the design pattern that’s revolutionizing the way we build modern applications. In this article, we’ll dive deep into the CQRS concept, explore its key benefits, and uncover three real-world examples that demonstrate its power in action. Get ready to unlock the full potential of your applications with CQRS!",
         iconName: "Dev"
+    },
+    {
+        title: "Create Kafka Producer app and stream Wikimedia messages",
+        page: "Medium",
+        time: "Sep 2024",
+        url:"https://medium.com/@mkprajapati1614/create-kafka-producer-app-and-stream-wikimedia-messages-c0251cce1b76",
+        description: "This article is dedicated to sending messages from Kafka Producer application using Wikimedia Data stream to Kafka Broker (for Consumer application, there is another article similar to this one)",
+        iconName: "Medium"
+    },
+    {
+        title: "Create Kafka Consumer app and Save messages to Database | Spring-boot & MongoDB",
+        page: "Medium",
+        time: "Sep 2024",
+        url:"https://medium.com/@mkprajapati1614/create-kafka-consumer-app-and-save-messages-to-database-spring-boot-mongodb-182796dbda05",
+        description: "This article is dedicated to consuming messages from Kafka Broker and saving them to MongoDB database using Spring-boot and MongoDB",
+        iconName: "Medium"
     }
 ]

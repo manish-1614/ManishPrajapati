@@ -17,6 +17,14 @@ export const portfolioList = [
 
     },
     {
+        topic: "Certification",
+        title: "GitHub Foundations",
+        company: "GitHub",
+        time: "May 2014",
+        url: "https://www.credly.com/badges/b844a0a7-5055-461b-8492-e93e89f1d659/public_url",
+        description: "Demonstrates proficiency in using GitHub for version control, collaboration, and project management. This certification showcases the ability to work with repositories, branches, and pull requests, ensuring efficient and organized development workflows.",
+    },
+    {
         topic: "Competitive Exams",
         title: "BIT MCA Entrance Examination",
         company: "Birla Institute of Technology",

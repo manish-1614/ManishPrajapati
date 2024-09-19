@@ -6,7 +6,7 @@ const InfoLink = () => {
   return (
     <div className='my-border w-full h-full m-1'>
         {/* profile name  */}
-        <p className='my-border bg-white opacity-75 text-lg'>Software Engineer / Problem Solver</p>
+        <p className='my-border bg-richblack-25 opacity-75 text-sm'>Software Engineer / Problem Solver</p>
 
         {/* list of links to profile */}
         <div className='w-11/12 mx-auto'>

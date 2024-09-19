@@ -4,7 +4,7 @@ import IconRenderer from './IconRenderer'
 
 const TechStack = () => {
   return (
-    <div className='my-border h-20 mx-auto overflow-hidden overflow-x-scroll'>
+    <div className='my-border h-20 mx-auto overflow-x-scroll'>
         <div className='text-4xl duration-150 flex gap-2'>
             {
               techStackIcons.map((element, index) => (

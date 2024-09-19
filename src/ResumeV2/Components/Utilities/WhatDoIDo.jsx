@@ -5,7 +5,7 @@ import './util.css'
 
 const WhatDoIDo = () => {
   return (
-    <div className='my-border  w-full h-full'>
+    <div className='my-border'>
       <header>What Do I do !</header>
 
       {/* make a grid of 4 elements */}

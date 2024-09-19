@@ -8,15 +8,15 @@ import './HeroSection.css'
 
 const About = () => {
   return (
-    <div className='my-border flex flex-col gap-4'>
+    <div className='my-border flex flex-col gap-4 overflow-x-hidden'>
         {/* Heading "About ----------" */}
         <div>
           <p className='heading'>About</p>
-          <div className='underline'></div>
+          <div className='underlining'></div>
         </div>
 
         {/* description  */}
-        <div className='flex flex-col gap-4'>
+        <div>
           <p>
             I am a Software Developer
             As an experienced software engineer with over 7 years in the CRM domain, I have developed a proven track record of delivering high-quality, innovative solutions. In my role as a lead developer, I have been responsible for the full software development lifecycle, from requirements gathering and technical design to performance optimization and rigorous testing.
