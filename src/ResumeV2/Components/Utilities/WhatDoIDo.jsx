@@ -12,7 +12,7 @@ const WhatDoIDo = () => {
       <div className='grid lg:grid-cols-2 grid-rows-2 gap-2 justify-between sm:grid-cols-1 xs:grid-cols-1'>
         {
           deedsList.map((element, index) => (
-            <div key={index} className='my-border h-52 relative overflow-hidden'>
+            <div key={index} className='my-border relative overflow-hidden'>
               <WhatIDoCard title={element.title} imageUrl={element.imageUrl} description={element.description}/>
             </div>
           ))
