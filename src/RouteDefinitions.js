@@ -7,6 +7,7 @@ import Resume from './ResumeV2/Pages/Resume';
 import Blogs from './ResumeV2/Pages/Blogs';
 import ContactMe from './ResumeV2/Pages/ContactMe';
 import Portfolio from './ResumeV2/Pages/Portfolio';
+import DateUtility from './ResumeV2/Pages/DateUtility';
 
 
 function RouteDefinitions() {
@@ -21,6 +22,7 @@ function RouteDefinitions() {
       </Route>
       
       <Route path="v2/" element={<LandingPage/>} />
+      <Route path="utility" element={<DateUtility/>} />
     </Routes>
   );
 }
