@@ -3,17 +3,24 @@ import { workExperiences } from '../../data/workExperience';
 
 const Experiences = () => {
   return (
-    <div className='my-border'>
-      <div>
-        <p>Experiences</p>
+    <div>
+      <div className='mt-2'>
+        <p className='font-bold text-xl'>Experiences</p>
       </div>
       <div>
         {
           workExperiences.map((element, index) => (
             <div key={index}>
-              <p>{element.title}</p>
-              <p>{element.company}</p>
-              <p>{element.duration}</p>
+              <div className='flex items-center justify-between'> 
+                <div className='mt-2'>
+                  <p className='text-lg font-roboto'>{element.title}</p>
+                  <p className='font-robotoslab'>{element.company}</p>
+                </div>
+                <div>
+                  <p>{element.duration}</p>
+                </div>
+              </div>
+
               <ul className='list-disc'>
                 {
                   element.details.map((detail, index) => (

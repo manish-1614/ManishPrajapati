@@ -6,19 +6,19 @@ import EducationList from '../Components/Utilities/EducationList'
 
 const Resume = () => {
   return (
-    <div className='my-border w-full h-full'>
-      <header>
-        <p>Resume</p>
-        <div></div>
-      </header>
+    <div>
+      <div>
+        <p className='heading'>Resume</p>
+        <div className='underlining'></div>
+      </div>
 
       {/* Experiences and Education  */}
-      <div className='grid gap-2 grid-cols-2'>
+      <div className='grid gap-2 lg:grid-cols-2 grid-cols-1'>
         <Experiences/>
         <EducationList/>
       </div>
 
-      <div className='grid gap-2 grid-cols-2'>
+      <div className='grid gap-2 grid-cols-1 lg:grid-cols-2'>
         <WorkingSkills/>
         <Knowledges/>
       </div>

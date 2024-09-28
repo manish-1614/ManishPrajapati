@@ -5,16 +5,22 @@ const EducationList = () => {
   return (
     <div>
       <header>
-        <p>Education</p>
+        <p className='font-bold text-xl'>Education</p>
       </header>
       <div className='grid gap-2'>
         {
           educations.map((element, index) => (
             <div key={index} className='my-border'>
-              <p>{element.name}</p>
-              <p>{element.course}</p>
-              <p>{element.duration}</p>
-              <p>{element.score}</p>
+            <div className='flex justify-between items-center'>
+              <div className='flex flex-col'>
+                <p className='font-roboto text-lg'>{element.name}</p>
+                <p className='font-bold text-xl'>{element.course}</p>
+              </div>
+              <div className='flex flex-col items-end'>
+                <p className='text-richblack-700 text-sm font-bold'>{element.duration}</p>
+                <p>{element.score}</p>
+              </div>
+            </div>
             </div>
           ))
         }
