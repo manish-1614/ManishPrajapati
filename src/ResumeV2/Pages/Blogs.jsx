@@ -7,7 +7,7 @@ const Blogs = () => {
     <div className='flex flex-wrap'>
         {
             blogList.map((element, index) => (
-                <div key={index} className='my-border w-[45%]'>
+                <div key={index} className='my-border lg:w-[47%]'>
                     <BlogCard element={element}/>
                 </div>
             ))

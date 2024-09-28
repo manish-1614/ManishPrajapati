@@ -53,7 +53,7 @@
     grid-area: out;
 }
 
-@media (400px <= width <= 1000px) {
+@media (400px <= width <= 1080px) {
     #navbar{
         display: flex;
         flex-direction: column;

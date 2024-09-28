@@ -2,6 +2,7 @@ import React from 'react'
 import * as FaIcons from 'react-icons/fa'
 import * as SiIcons from 'react-icons/si'
 import * as TbIcons from 'react-icons/tb'
+import * as VSCIcons from 'react-icons/vsc'
 
 
 const IconRenderer = ({ iconPath }) => {
@@ -16,6 +17,9 @@ const IconRenderer = ({ iconPath }) => {
         return <Icon />
     } else if (prefix === "tb") {
         const Icon = TbIcons[iconName];
+        return <Icon />
+    } else{
+        const Icon = VSCIcons[iconPath];
         return <Icon />
     }
 }

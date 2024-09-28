@@ -86,7 +86,7 @@ const ContactMe = () => {
           <textarea
             name="message"
             id="message"
-            cols="20"
+            cols="70"
             rows="2"
             placeholder="Enter your message here"
             className="form-style"
