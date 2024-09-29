@@ -78,7 +78,7 @@ const HamburgerMeun = () => {
                         onClick={closeMenu}
                         
                     >
-                        <div className='text-richblack-100 hover:text-lg duration150 flex flex-row items-center gap-2'>
+                        <div className='text-richblack-100 hover:text-2xl hover:text-pink-200 duration-150 flex flex-row items-center gap-2'>
                             <IconRenderer iconPath={element.icon} />
                             <span>{element.name}</span>
                         </div>
