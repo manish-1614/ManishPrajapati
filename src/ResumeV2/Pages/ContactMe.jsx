@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { useForm } from 'react-hook-form';
+import React, { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const ContactMe = () => {
   const [loading, setLoading] = useState(false);
@@ -12,71 +13,94 @@ const ContactMe = () => {
 
   const submitContactForm = async (data) => {
     try {
-      setLoading(true)
+      setLoading(true);
       console.log("Email sent - ", data);
-      // TODO - email sending logic
-      // console.log("Email Res - ", res)
-      setLoading(false)
+      saveInformation(data);
+      setLoading(false);
     } catch (error) {
-      console.log("ERROR MESSAGE - ", error.message)
-      setLoading(false)
+      console.log("ERROR MESSAGE - ", error.message);
+      setLoading(false);
     }
-  }
+  };
 
-  useEffect( () => {
-    if(isSubmitSuccessful) {
+  const saveInformation = async (data) => {
+    await fetch("https://formspree.io/f/mgvwgpkv", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((response) => {
+        if (response.ok) {
+          toast.success("Email sent successfully!");
+        } else {
+          toast.error("Something went wrong while submitting your data. Please try again later.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
       reset({
         email: "",
-        name: "",  
+        name: "",
         message: "",
-      })
+      });
     }
-  }, [reset, isSubmitSuccessful])
-  
+  }, [reset, isSubmitSuccessful]);
+
   return (
     <div className="mx-auto">
       <div>
-        <p className='font-roboto text-xl'>I'll be happy to connect with you.</p>
-        <p className='font-thin'>Let's get in touch!</p>
+        <p className="font-roboto text-xl">
+          I'll be happy to connect with you.
+        </p>
+        <p className="font-thin">Let's get in touch!</p>
 
-        <form className='flex flex-col gap-2' onSubmit={handleSubmit(submitContactForm)}>
+        <form
+          className="flex flex-col gap-2"
+          onSubmit={handleSubmit(submitContactForm)}
+        >
           {/* name  */}
-          
-          <div className='my-border'>
-            <label htmlFor='name'>Your Name<sup>*</sup></label>
-            <input 
-              type='text'
-              name='name'
-              id='name'
-              placeholder='Enter your name'
+
+          <div className="my-border">
+            <label htmlFor="name">
+              Your Name<sup>*</sup>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
               {...register("name", { required: true })}
             />
-            {
-              errors.name && (
-                <span className='text-red-500'>
-                  Please enter your name before submitting
-                </span>
-              )
-            }
+            {errors.name && (
+              <span className="text-red-500">
+                Please enter your name before submitting
+              </span>
+            )}
           </div>
 
           {/* email address  */}
-          <div className='my-border'>
-            <label htmlFor='email'>Email Address <sup>*</sup></label>
+          <div className="my-border">
+            <label htmlFor="email">
+              Email Address <sup>*</sup>
+            </label>
             <input
-              type='email'
-              name='email'
-              id='email'
-              placeholder='Enter your email address'
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
               {...register("email", { required: true })}
             />
-            {
-              errors.email && (
-                <span className='text-red-500'>
-                  Please enter your email address before submitting
-                </span>
-              )
-            }
+            {errors.email && (
+              <span className="text-red-500">
+                Please enter your email address before submitting
+              </span>
+            )}
           </div>
 
           {/* message  */}
@@ -96,20 +120,19 @@ const ContactMe = () => {
           {/* submit button  */}
           <button
             disabled={loading}
-            type='submit'
+            type="submit"
             className={`rounded-md bg-yellow-50 px-6 py-3 text-center text-[13px] font-bold text-black shadow-[2px_2px_0px_0px_rgba(255,255,255,0.18)] 
           ${
             !loading &&
             "transition-all duration-200 hover:scale-95 hover:shadow-none"
           }  disabled:bg-richblack-500 sm:text-[16px] `}
           >
-              Get in touch
+            Get in touch
           </button>
-      
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactMe
+export default ContactMe;
