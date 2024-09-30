@@ -21,7 +21,7 @@ export const links = [
     },
     {
         text: "github Repo",
-        url: "https://github.com/guddu9211",
+        url: "https://github.com/manish-1614",
         iconName: "AiOutlineGithub"
     },
     {

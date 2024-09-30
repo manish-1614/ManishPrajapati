@@ -48,7 +48,7 @@ const HeroSection = () => {
             <SidePanel/>
           </div>
           <div id="outlet-panel" className='mt-10'>
-              <div className='w-11/12 p-10'>
+              <div className='lg:w-11/12 md:w-10/12 mx-auto p-6'>
                   <Outlet/>
               </div>
           </div>

@@ -11,7 +11,7 @@ const BlogCard = ({element}) => {
         </a>
 
         <div className='flex justify-between font-bold'>
-            <p className='border-2 rounded-md px-1'>{element.page}</p>
+            <p className='border-2 rounded-md px-1 mx-2'>{element.page}</p>
             <p className='underline'>{element.time}</p>
         </div>
         

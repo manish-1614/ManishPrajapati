@@ -8,7 +8,7 @@ const Badges = () => {
         <div>
             <div className='mt-6'>
                 <p className='text-xl underline'>Affiliated Badges</p>
-                <div className='flex flex-wrap gap-2'>
+                <div className='flex flex-wrap gap-2 justify-center items-center my-2'>
                     {
                         affiliatedBadges.map((element, index) => (
                             <a href={element.url} target='_blank' rel='noreferrer' key={index} className='flex flex-col gap-1 justify-center items-center'>
@@ -23,7 +23,7 @@ const Badges = () => {
             
             <div className='my-6'>
                 <p className='text-xl underline'>Badges</p>
-                <div className='flex flex-wrap gap-2'>
+                <div className='flex flex-wrap gap-2 my-2 justify-center items-center'>
                     {
                         badgesList.map((element, index) => (
                             <img src={element.imageUrl} alt={`${element.title}`} key={index} className='aspect-square w-20'/>

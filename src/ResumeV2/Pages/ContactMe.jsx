@@ -34,7 +34,7 @@ const ContactMe = () => {
   }, [reset, isSubmitSuccessful])
   
   return (
-    <div className="w-full mx-auto">
+    <div className="mx-auto">
       <div>
         <p className='font-roboto text-xl'>I'll be happy to connect with you.</p>
         <p className='font-thin'>Let's get in touch!</p>
