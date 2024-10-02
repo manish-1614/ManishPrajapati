@@ -45,6 +45,11 @@ export const badgesList = [
         date: "2023-12-16"
     },
     {
+        title: "September 2024",
+        imageUrl: "https://leetcode.com/static/images/badges/dcc-2024-9.png",
+        date: "2024-09-30"
+    },
+    {
         title: "August 2024",
         imageUrl: "https://leetcode.com/static/images/badges/dcc-2024-8.png",
         date: "2024-08-31"
