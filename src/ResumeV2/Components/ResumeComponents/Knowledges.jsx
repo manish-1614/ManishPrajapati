@@ -5,7 +5,7 @@ const Knowledges = () => {
   return (
     <div className='my-border h-full'>
       <header>
-        <p>Knowledges</p>
+        <p className='font-bold underline mb-2'>Knowledges</p>
       </header>
       <div className='flex flex-wrap gap-1'>
         {

@@ -5,7 +5,7 @@ const EducationList = () => {
   return (
     <div>
       <header>
-        <p className='font-bold text-xl'>Education</p>
+        <p className='font-bold text-xl underline'>Education</p>
       </header>
       <div className='grid gap-2'>
         {

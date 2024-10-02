@@ -14,32 +14,30 @@ const ContactMe = () => {
   const submitContactForm = async (data) => {
     try {
       setLoading(true);
-      console.log("Email sent - ", data);
+      // console.log("Email sent - ", data);
       saveInformation(data);
       setLoading(false);
     } catch (error) {
-      console.log("ERROR MESSAGE - ", error.message);
+      console.error("ERROR MESSAGE - ", error.message);
       setLoading(false);
     }
   };
 
   const saveInformation = async (data) => {
-    await fetch("https://formspree.io/f/mgvwgpkv", {
+    const response = await fetch("https://formspree.io/f/mgvwgpkv", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((response) => {
-        if (response.ok) {
-          toast.success("Email sent successfully!");
-        } else {
-          toast.error("Something went wrong while submitting your data. Please try again later.");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
+    });
+    // console.log("Response received:: ",response);
+    
+    if (response.ok) {
+      toast.success("Email sent successfully!");
+    } else {
+      toast.error("Something went wrong while submitting your data. Please try again later.");
+    }
   };
 
   useEffect(() => {
@@ -54,7 +52,7 @@ const ContactMe = () => {
 
   return (
     <div className="mx-auto">
-      <div>
+      
         <p className="font-roboto text-xl">
           I'll be happy to connect with you.
         </p>
@@ -68,38 +66,40 @@ const ContactMe = () => {
 
           <div className="my-border">
             <label htmlFor="name">
-              Your Name<sup>*</sup>
+              Your Name<sup className="text-pink-100">*</sup>
             </label>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Enter your name"
+              className="p-2 rounded-md"
               {...register("name", { required: true })}
             />
             {errors.name && (
-              <span className="text-red-500">
+              <p className="text-pink-200">
                 Please enter your name before submitting
-              </span>
+              </p>
             )}
           </div>
 
           {/* email address  */}
           <div className="my-border">
             <label htmlFor="email">
-              Email Address <sup>*</sup>
+              Email Address <sup className="text-pink-100">*</sup>
             </label>
             <input
               type="email"
               name="email"
               id="email"
+              className="p-2 rounded-md"
               placeholder="Enter your email address"
               {...register("email", { required: true })}
             />
             {errors.email && (
-              <span className="text-red-500">
+              <p className="text-pink-200">
                 Please enter your email address before submitting
-              </span>
+              </p>
             )}
           </div>
 
@@ -112,6 +112,7 @@ const ContactMe = () => {
               name="message"
               id="message"
               rows="2"
+              className="p-2 rounded-md"
               placeholder="Enter your message here"
               {...register("message", { required: false })}
             />
@@ -130,7 +131,7 @@ const ContactMe = () => {
             Get in touch
           </button>
         </form>
-      </div>
+      
     </div>
   );
 };

@@ -6,7 +6,7 @@ const WorkingSkills = () => {
   return (
     <div className='my-border h-full'>
       <header>
-        <p>Working Skills</p>
+        <p className='font-bold underline'>Working Skills</p>
       </header>
       <div>
         {

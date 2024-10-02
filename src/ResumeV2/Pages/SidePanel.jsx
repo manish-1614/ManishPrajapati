@@ -10,7 +10,7 @@ const SidePanel = () => {
             className='w-[70%] aspect-square object-cover my-border mx-auto'
           />
 
-          <div>
+          <div className='overflow-hidden'>
             {/* information sharing card  */}
             <InfoLink/>
           </div>

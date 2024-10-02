@@ -27,15 +27,14 @@ const Portfolio = () => {
         }
       </div>
       <div>
-        <h1 className='heading'>Certificates</h1>
-        <div className='underlining'></div>
+        <h1 className='heading underline'>Course Completion Certificates</h1>
         <PhotoProvider>
-        <div className='flex flex-wrap gap-2'>
+        <div className='flex flex-wrap gap-4'>
           {
             certificatesList.map((element, index) => (
-              <div className='flex flex-col gap-4 justify-center text-center max-w-[200px]'>
+              <div className='flex flex-col gap-4 justify-center mx-auto text-center max-w-[200px]'>
                 <PhotoView key={index} src={element.url}>
-                  <img src={element.thumbnail} alt={element.title} className='hover:scale-110 duration-150' />
+                  <img src={element.thumbnail} alt={element.title} className='hover:scale-125 duration-150 ease-linear' />
                 </PhotoView>
                 <p className='text-sm italic'>{element.title}</p>
               </div>
