@@ -18,10 +18,7 @@ const About = () => {
         {/* description  */}
         <div>
           <p className='font-roboto text-justify'>
-            I am a Software Developer
-            As an experienced software engineer with over 7 years in the CRM domain, I have developed a proven track record of delivering high-quality, innovative solutions. In my role as a lead developer, I have been responsible for the full software development lifecycle, from requirements gathering and technical design to performance optimization and rigorous testing.
-            Beyond my individual contributions, I have also taken on a mentorship role, providing guidance and support to new team members. I firmly believe in the importance of knowledge sharing and collaboration to drive team success and individual growth.
-            My technical expertise extends beyond traditional software engineering, as I am adept at leveraging state-of-the-art AI tools to streamline development processes and optimize resource utilization. By staying current with the latest technologies and methodologies, I consistently deliver solutions that drive tangible business value.
+            I am a Software Developer with over 7 years of experience in the CRM domain, specializing in delivering high-quality, innovative solutions. As a lead developer, I manage the full software development lifecycle, from requirements gathering and design to performance optimization and testing. I also mentor junior team members, promoting collaboration and knowledge sharing to foster team success. With a strong technical background and proficiency in AI tools, I focus on streamlining processes and delivering solutions that create real business value.
           </p>
         </div>
 
