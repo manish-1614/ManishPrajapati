@@ -1,5 +1,10 @@
 export const certificatesList = [
     {
+        title: "Ultimate AWS Cloud Practitioner CLF-C02 2025",
+        url: "https://res.cloudinary.com/dyfthf6kw/image/upload/v1732531554/certificates_badges/Ultimate_AWS_Ceretified_Cloud_Practitioner_CLF-C02_2025_anvu2d.jpg",
+        thumbnail: "https://res.cloudinary.com/dyfthf6kw/image/upload/c_thumb,w_200,g_face/v1732531554/certificates_badges/Ultimate_AWS_Ceretified_Cloud_Practitioner_CLF-C02_2025_anvu2d.jpg"
+    },
+    {
         title: "MERN Stack Development",
         url: "https://res.cloudinary.com/dyfthf6kw/image/upload/v1726642679/certificates_badges/MERN_stack_certificate_yuducg.jpg",
         thumbnail: "https://res.cloudinary.com/dyfthf6kw/image/upload/c_thumb,w_200,g_face/v1726642679/certificates_badges/MERN_stack_certificate_yuducg.jpg"

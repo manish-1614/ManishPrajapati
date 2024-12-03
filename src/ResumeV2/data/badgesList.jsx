@@ -15,6 +15,15 @@ export const affiliatedBadges = [
 
 export const badgesList = [
     {
+        title: "500 Days 2024",
+        imageUrl: "https://assets.leetcode.com/static_assets/marketing/500.png",
+        date: "2024-12-02"
+    },{
+        title: "365 Days Badge",
+        imageUrl: "https://assets.leetcode.com/static_assets/marketing/365.png",
+        date: "2024-12-02"
+    },
+    {
         title: "200 Days 2024",
         imageUrl: "https://assets.leetcode.com/static_assets/marketing/2024-200-lg.png",
         date: "2024-07-23"
@@ -32,6 +41,10 @@ export const badgesList = [
         imageUrl: "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
         date: "2024-02-21"
     },{
+        title: "Annual Badge 2024",
+        imageUrl: "https://assets.leetcode.com/static_assets/marketing/2024-lg.png",
+        date: "2024-11-10"
+    },{
         title: "Annual Badge 2023",
         imageUrl: "https://assets.leetcode.com/static_assets/marketing/lg2023.png",
         date: "2023-12-31"
@@ -43,8 +56,15 @@ export const badgesList = [
         title: "100 Days 2023",
         imageUrl: "https://assets.leetcode.com/static_assets/marketing/lg100.png",
         date: "2023-12-16"
-    },
-    {
+    },{
+        title: "November 2024",
+        imageUrl: "https://leetcode.com/static/images/badges/dcc-2024-11.png",
+        date: "2024-11-30"
+    },{
+        title: "October 2024",
+        imageUrl: "https://leetcode.com/static/images/badges/dcc-2024-10.png",
+        date: "2024-10-31"
+    },{
         title: "September 2024",
         imageUrl: "https://leetcode.com/static/images/badges/dcc-2024-9.png",
         date: "2024-09-30"
